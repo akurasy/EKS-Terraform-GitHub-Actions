@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "witty-eks-s3-bucket"
-    region         = "us-east-1"
+    region         = "us-west-2"
     key            = "eks/terraform.tfstate"
     dynamodb_table = "Lock-Files"
     encrypt        = true
